@@ -1,5 +1,6 @@
 package com.org.project.coreJava;
 
+
 import java.util.Scanner;
 
 /**
@@ -10,8 +11,12 @@ public class scannerExample {
     public static void main(String[] agrs) {
 
         Scanner sc= new Scanner(System.in);
-        String age=sc.nextLine();
-        System.out.println(" your age is: " +age);
+        System.out.println(" Please Enter your age and space name ");
+        int age=sc.nextInt();
+        System.out.println(" Entered your age is: " +age);
+        String Name=sc.nextLine();
+        System.out.println(" Entered your name  is: " +Name);
+
 
     }
 }
