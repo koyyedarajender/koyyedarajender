@@ -6,7 +6,9 @@ import java.util.Scanner;
  * Created by rajender.koyyeda on 14-02-2022.
  */
 public class SwitchExample {
+
     public static void main(String args[]){
+
      Scanner scc=new Scanner(System.in);
       String stateName=scc.nextLine();
 
@@ -19,7 +21,7 @@ public class SwitchExample {
               System.out.println("Captiatal city of given state :" +stateName +" is a Channai");
               break;
           case "Dehli":
-              System.out.println("Captiatal city of given state :" +stateName +" is a defli");
+              System.out.println("Captiatal city of given state :" +stateName +" is a dehli");
               break;
 
           default:

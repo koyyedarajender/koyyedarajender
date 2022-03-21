@@ -6,43 +6,47 @@ package com.org.project.coreJava;
 public class OperatorsMainClass {
     public static void main(String args[]){
 
-      /*  Unary=========
+       //Unary=========
 
-        int x=10;
+        /*int x=10;
         int y=-x;
-        System.out.println(y);*/
+
+        System.out.println(y);
+        System.out.println(x);*/
 
         /*int x=10;
         int y=++x; //pre increment
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println(x);  //11
+        System.out.println(y);  //11*/
 
-        int x=10;
+        /*int x=10;
         int y=x++; //post increment
-        System.out.println(x);
-        System.out.println(y);*/
+        System.out.println(x);  //11
+        System.out.println(y); //10*/
 
 
-       /* int x=10;
+        /*int x=10;
         int y=--x; //pre decrement
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println(x); //9
+        System.out.println(y);  //9*/
 
-        int x=10;
+        /*int x=10;
         int y=x--; //post decrement
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println(x); //9
+        System.out.println(y);  //10*/
 
-        Binary=========
+        /* Binary=========
         +-/*
         <.>,<=,==
         &&,||,!
-        =
+        =  */
 
+
+        //Ternery
         int x=5;
         int y=6;
-        int z=x<y?x:y;
-        System.out.println(z); */
+        int z=x<y?x:y;   //true x and false y
+        System.out.println(z);
 
     }
 }

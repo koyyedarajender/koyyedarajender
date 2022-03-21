@@ -9,3 +9,10 @@
   #######################17 Mar 2022=============================================
 
   #1 create a class and practice convertion/casting/generics
+
+
+  #######################21 Mar 2022=============================================
+
+  #1 Practice all operators
+  #2 write a program to check given number is even or odd (scanner -- input ...number even -- its even.... its not even ) using if -else operator
+  #3 write a program to using switch , give input as company name based on name return CEO of compnay
