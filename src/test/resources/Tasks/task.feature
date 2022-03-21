@@ -4,3 +4,8 @@
   #and execute it  (output should the values)
 
  #2 create a class for scanner class and given other than int and string datatypes values as run time and print them
+
+
+  #######################17 Mar 2022=============================================
+
+  #1 create a class and practice convertion/casting/generics
