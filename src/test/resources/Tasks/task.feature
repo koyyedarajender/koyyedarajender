@@ -16,3 +16,22 @@
   #1 Practice all operators ===>Not completed
   #2 write a program to check given number is even or odd (scanner -- input ...number even -- its even.... its not even ) using if -else operator==>completed
   #3 write a program to using switch , give input as company name based on name return CEO of compnay==>completed
+
+
+  #######################22 Mar 2022=============================================
+  #1 using for loop-- find the given number is prime number or not ...... (scanner ---input 7 /int check=0----for(int i=2;i<7;i++) ---- 7%2==0 ===check =1..if(check==0)===prime else not prime)
+  #2 reverse a given number (scnanner -- x=12345, output=54321) using while loop  ()
+
+ #  n=123
+ #  int r=0;
+ #  while(n!=0){
+ #  int d=n%10;                       123%10===>3===2
+ #  r=r*10+d;                         0*10+3==>3==3*10+2==>32
+ #  n=n/10;                           123/10==12==>12/10==>1
+ #  }
+
+  #3 fibbonaci series ..... while/for/do while loop  (0,1,1,2,3,5,8......etc)  10
+
+
+
+
