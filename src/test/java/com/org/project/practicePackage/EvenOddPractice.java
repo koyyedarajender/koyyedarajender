@@ -9,10 +9,15 @@ public class EvenOddPractice {
         System.out.println("enter the number to check: ");
         a = sc.nextInt();
 
-        if( a%2 == 0)
+        if( a%2 == 0) {
+
             System.out.println("number is even ");
-        else
+
+        }
+        else {
+
             System.out.println("number is odd ");
+        }
 
 
 
