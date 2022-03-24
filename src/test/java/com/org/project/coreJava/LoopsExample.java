@@ -50,7 +50,10 @@ public class LoopsExample {
 
 
 
-      /*  char[] alpbhts = { 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+      /* for each and for loop diff
+
+
+      char[] alpbhts = { 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
         int[] num = {9,8,7};
         System.out.println(alpbhts.length);
 
