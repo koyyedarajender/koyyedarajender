@@ -50,20 +50,20 @@ public class LoopsExample {
 
 
 
-      /* for each and for loop diff
+      // for each and for loop diff
 
 
       char[] alpbhts = { 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
-        int[] num = {9,8,7};
+
         System.out.println(alpbhts.length);
 
-       for(char i = 0; i < alpbhts.length; i++) {
+       /*for(char i = 0; i < alpbhts.length; i++) {
             char alpbht = alpbhts[i];
             System.out.print(alpbht + " ");
 
-        }
+        }*/
 
-        System.out.println();
+        /*System.out.println();
         for(int i = alpbhts.length-1; i >= 0  ; i--) {
             char alpbht = alpbhts[i];
             System.out.print(alpbht + " ");
@@ -71,12 +71,15 @@ public class LoopsExample {
         }
 
 
-         System.out.println();
+         System.out.println();*/
+
         for(char alphbt : alpbhts)
         {
             System.out.print(alphbt + " ");
         }
 
+        /*
+         int[] num = {9,8,7};
         System.out.println();
         for(int a : num)
         {

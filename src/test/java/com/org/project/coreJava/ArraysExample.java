@@ -5,28 +5,38 @@ package com.org.project.coreJava;
  */
 public class ArraysExample {
     public static void main(String[] agrs) {
-       int[] scores = { 215, 234, 218, 189, 221, 290}; //initiation
 
-        int []b; //declare
+     /*int[] scores = { 215, 234, 218, 189, 221, 290}; //initiation
+
+     System.out.println(scores.length);
+     *//*for(int i = 0; i < scores.length; i++)
+     {
+      int score = scores[i];
+      System.out.print(score + "  ");
+
+     }System.out.println();*//*
+
+     for(int j :scores)
+     {
+      System.out.print(j+ "  ");
+
+     }*/
+
+
+       /* int []b; //declare
         b= new int[4]; //instantiation
         b[0]=12;  ////initiation
-        b[1]=12;
-        b[2]=12;
-        b[3]=12;
+        b[1]=13;
+        b[2]=14;
+        b[3]=15;
+       // b[4]=15; exception
 
-   /*     System.out.println(scores.length);
-        for(int i = 0; i < scores.length; i++)
-        {
-            int score = scores[i];
-            System.out.print(score + "  ");
+     for(int i = 0; i < b.length; i++)
+     {
+     // int s = ;
+      System.out.print(b[i] + "  ");
 
-        }System.out.println();
-
-        for(int j :scores)
-        {
-            System.out.println(j+ "  ");
-
-        }*/
+     }*/
 
 
 
@@ -44,13 +54,20 @@ public class ArraysExample {
         //copy array and clone array
 
         char[] source={'r','a','j','e','n','d','e','r'};
-        System.out.println("source array elements: "+String.valueOf(source));
+
+        System.out.println("source array elements: "+String.valueOf(source));  //array to string
+
+
         char[] raj=new char[5];
+
         System.arraycopy(source,0,raj,0,5);
-        System.out.println("destination array elements: "+String.valueOf(raj));
+
+
+        System.out.println("copied destination array elements: "+String.valueOf(raj));  //copy
 
         char a[]=source.clone();
-        System.out.println("cloned a array elements: "+String.valueOf(a));
+
+        System.out.println("cloned a array elements: "+String.valueOf(a));  //clone
 
 
     }

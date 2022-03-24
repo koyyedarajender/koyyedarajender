@@ -32,6 +32,9 @@
 
   #3 fibbonaci series ..... while/for/do while loop  (0,1,1,2,3,5,8......etc)  10
 
-
-
+   #######################24 Mar 2022=============================================
+   # 1 create a class with array type values as string, provide values and print them
+  #2 find a largest and smallest number from int type array.  {2,3,4,5,6}===>small=2 and large=6
+  #3 practies the copy and clone of array
+  #4 how can you increase size of an array ?
 
