@@ -38,3 +38,7 @@
   #3 practies the copy and clone of array
   #4 how can you increase size of an array ?
 
+   #######################29 Mar 2022=============================================
+  #1 add two 2*3 matrix
+  #2 missed string method add and do practies
+
