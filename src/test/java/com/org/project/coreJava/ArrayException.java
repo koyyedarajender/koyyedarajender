@@ -9,16 +9,16 @@ public class ArrayException {
         Thread.sleep(1000);
         try{
             int a[]={9,8,7};
-            System.out.println(a[3]/0);
-            System.out.println("Success:: My name is GOVARDHAN");
+            System.out.println(a[2]/1);
+            System.out.println("Success:: try code");
         }catch (Exception es){
-            System.out.println("failed :: array calling with size");
+            System.out.println("failed :: array calling with size- catch code");
            es.printStackTrace();
          //  es.getMessage();
         }finally {
-            System.out.println("Na chav nanu chastha");
+            System.out.println("Finally code");
         }
 
-        System.out.println("My name is rajender");
+        System.out.println("main method coce");
     }
 }
