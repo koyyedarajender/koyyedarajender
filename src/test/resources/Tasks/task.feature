@@ -42,3 +42,7 @@
   #1 add two 2*3 matrix
   #2 missed string method add and do practies
 
+  #######################30th Mar 2022=============================================
+
+#1 swap a two strings without using 3rd variable===> a=="test",b="auto"==>a==auto,b=test
+#2 practies 5 keywords ==>
