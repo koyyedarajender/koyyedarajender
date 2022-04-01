@@ -1,6 +1,6 @@
 package com.org.project.coreJava;
 
-public class Constructor_Class1 extends Constructor_Class {
+public class Constructor_Class1  { //extends Constructor_Class
 
     public Constructor_Class1(String x){
         bb=x;

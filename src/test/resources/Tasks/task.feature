@@ -46,3 +46,7 @@
 
 #1 swap a two strings without using 3rd variable===> a=="test",b="auto"==>a==auto,b=test
 #2 practies 5 keywords ==>
+
+    #######################1st Apr 2022=============================================
+  #1 Create a student class---> in object pass s-id,s-name,s-class,s-marks for 10 student and call/print them    (try to learn/practies this concept)
+
