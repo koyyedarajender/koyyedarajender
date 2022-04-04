@@ -4,6 +4,13 @@ package com.org.project.coreJava;
  * Created by rajender.koyyeda on 21-02-2022.
  */
 class Student{
+    {
+        System.out.println("normal block");
+    }
+    static {
+
+        System.out.println("Static block");
+    }
     int rollno;//instance variable
     String name;
     static String college ="XYZ";//static variable
@@ -19,6 +26,8 @@ class Student{
     }
     //method to display the values
     void display (){System.out.println(rollno+" "+name+" "+college);}
+
+    void display1 (){System.out.println(rollno+" "+name+" "+college);}
 }
 public class StaticKeyWordExample {
     public static void main(String args[]){
@@ -32,5 +41,6 @@ public class StaticKeyWordExample {
         //Student.college="BBDIT";
         s1.display();
         s2.display();
+        s2.display1();
     }
 }

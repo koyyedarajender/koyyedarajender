@@ -9,11 +9,11 @@ public class ThisKeyWordExample {
 
     ThisKeyWordExample(){  //2nd
         this(5);
-    System.out.println("hello a");
+    System.out.println("empty constructor - hello a");
     }
     ThisKeyWordExample(int x){  ///1st
       // this();
-        System.out.println(x);
+        System.out.println("one parameter constructor  "+x);
     }
 
 
@@ -32,6 +32,7 @@ public class ThisKeyWordExample {
     void m(){
         System.out.println("hello m");
     }
+
     void n(){
         System.out.println("hello n");
 //m();//same as this.m()
