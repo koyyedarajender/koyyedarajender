@@ -1,6 +1,6 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.inheritance;
 
-public class child extends Parent{
+public class child extends Parent {
 
     int j = 20;
     String name2 = "abc";

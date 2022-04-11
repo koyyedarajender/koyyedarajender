@@ -1,4 +1,4 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.arrays;
 
 /**
  * Created by rajender.koyyeda on 10-02-2022.

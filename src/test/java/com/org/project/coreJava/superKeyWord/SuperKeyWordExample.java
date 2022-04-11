@@ -1,4 +1,4 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.superKeyWord;
 
 /**
  * Created by rajender.koyyeda on 21-02-2022.

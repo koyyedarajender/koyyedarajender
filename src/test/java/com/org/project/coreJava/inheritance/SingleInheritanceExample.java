@@ -1,7 +1,7 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.inheritance;
 
 
-import org.apache.poi.poifs.property.Child;
+import com.org.project.coreJava.inheritance.Child2;
 
 public class SingleInheritanceExample {
     public static void main(String args[]){

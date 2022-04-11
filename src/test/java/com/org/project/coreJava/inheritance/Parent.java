@@ -1,4 +1,4 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.inheritance;
 
 /**
  * Created by rajender.koyyeda on 25-02-2022.

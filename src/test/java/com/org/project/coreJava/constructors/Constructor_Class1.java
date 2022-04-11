@@ -1,4 +1,4 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.constructors;
 
 public class Constructor_Class1  { //extends Constructor_Class
 

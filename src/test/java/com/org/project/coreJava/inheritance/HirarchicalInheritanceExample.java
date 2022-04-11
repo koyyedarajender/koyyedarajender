@@ -1,4 +1,6 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.inheritance;
+
+import com.org.project.coreJava.inheritance.ClassC;
 
 /**
  * Created by rajender.koyyeda on 25-02-2022.

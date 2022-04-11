@@ -1,4 +1,6 @@
-package com.org.project.coreJava;
+package com.org.project.coreJava.constructors;
+
+import com.org.project.coreJava.ConstructionInterface;
 
 public class Constructor_MainClass {
     public static void main(String args[]) {
