@@ -3,7 +3,7 @@ package com.org.project.coreJava.constructors;
 /**
  * Created by rajender.koyyeda on 02-02-2022.
  */
-public class Constructor_Class {
+public class Constructor_Class  {
     int a;
     String b;
     char c;

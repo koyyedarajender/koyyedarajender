@@ -55,3 +55,9 @@
   #2 create multilevel : A-->B extends A ---->C extends B
   #3 Hirarchical inheritance
 
+
+ #######################12th Apr 2022=============================================
+  #1 Create a class and add all modifiers type of methods and varibales , using inheritance concept, access them
+  #2 Encapsulation, create a class for Emp, create empid,empname,empsalary as 3 variables ... ass setter/getter to retrive the values from another class.Feature:
+  #3 practies super and final keywords
+

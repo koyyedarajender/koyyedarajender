@@ -7,8 +7,8 @@ package com.org.project.coreJava.finalKeyWord;
 //final class
 
 
-//final class Bike{}
-/*class Bike{}
+/*final class Bike{}
+//class Bike{}
 
 class Honda1 extends Bike{
     void run(){System.out.println("running safely with 100kmph");}
@@ -32,15 +32,16 @@ class Honda extends Bike{
         Honda honda= new Honda();
         honda.run();
     }
-}  */
+} */
 
 
 //Example of final variable
 
 /*class Bike{
-    final int speedlimit=90;//final variable
+   final  int speedlimit=90;//final variable
     void run(){
         speedlimit=400;
+        System.out.println(speedlimit);
     }
     public static void main(String args[]){
         Bike obj=new  Bike();

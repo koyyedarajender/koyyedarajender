@@ -7,6 +7,7 @@ public class SuperKeyWordExample {
     String color = "Parentwhite"; //var
 
     void eat() {
+
         System.out.println("Parent eating...");
     }  //method
 
@@ -36,6 +37,7 @@ class Dog extends SuperKeyWordExample {
     void work() {
         super.eat(); //method
         bark();
+        eat();
     }
 
     Dog() {
