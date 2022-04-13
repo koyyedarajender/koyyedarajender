@@ -61,3 +61,5 @@
   #2 Encapsulation, create a class for Emp, create empid,empname,empsalary as 3 variables ... ass setter/getter to retrive the values from another class.Feature:
   #3 practies super and final keywords
 
+  #######################13th Apr 2022=============================================
+  #1 practies all collection classes and write down all methods from whats app ....
