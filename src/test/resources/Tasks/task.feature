@@ -70,6 +70,11 @@
   #1 give user name / pwd as runtime and login to application
 
 
+  #######################26th Apr 2022=============================================
+  #1 launch a website(demo)/give wrong crendentails/ click on submit button/ errors come then execute screenshot code else no
+
+
+
 
 
 
