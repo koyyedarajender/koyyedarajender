@@ -36,5 +36,23 @@ public class Dropdowns {
             System.out.println("it is not multi selectable dropdown");
         }
 
+
+
+
+        WebElement MulDropdown= driver.findElement(By.xpath("(//select[@class='col-lg-3'])[3]"));
+        Select s1= new Select(MulDropdown);
+        if(s1.isMultiple()){
+            System.out.println("it is multi selectable dropdown");
+            s1.selectByVisibleText("Pizza");
+            Thread.sleep(2000);
+            s1.selectByVisibleText("Burger");
+            Thread.sleep(2000);
+            s1.deselectAll();
+            Thread.sleep(2000);
+        }else{
+            System.out.println("it is not multi selectable dropdown");
+        }
+
+        driver.close();
     }
 }
