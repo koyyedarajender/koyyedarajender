@@ -72,7 +72,8 @@
 
   #######################26th Apr 2022=============================================
   #1 launch a website(demo)/give wrong crendentails/ click on submit button/ errors come then execute screenshot code else no
-
+  #######################28th Apr 2022=============================================
+  #1 using switch case , give browser name as input ... based on name that browser should launch
 
 
 
