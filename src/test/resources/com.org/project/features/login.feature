@@ -9,12 +9,14 @@ Feature: test login
 Scenario Outline: Verify login success on sauce website
   Given Open the browser
   And launch the website "https://www.saucedemo.com/"
-  And login into application with below details
+  When login into application with below details
     | username   | password   |
-    | <username> | <password> |
-  And logout from application
+    | <user_name> | <password> |
+  Then logout from application
   And close the browser
   Examples:
-    | username      | password     |
+    | user_name      | password     |
     | standard_user | secret_sauce |
+
+
 
