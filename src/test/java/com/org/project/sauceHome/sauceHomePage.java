@@ -99,6 +99,7 @@ public class sauceHomePage extends basePage {
 
     public String getNameOfFirstProduct() {
         productName = pNameOfFirstProduct.getText().trim();
+
         return productName;
     }
 

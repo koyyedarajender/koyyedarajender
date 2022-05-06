@@ -17,7 +17,7 @@ import java.util.Scanner;
 import static com.org.project.sauceHome.sauceHomePage.price;
 import static com.org.project.sauceHome.sauceHomePage.productName;
 
-public class baseStepDefinition {
+public class baseStepDefinition extends basePage{
 
     WebDriver driver;
     basePage basePage = new basePage(driver);
@@ -36,6 +36,8 @@ public class baseStepDefinition {
     public void launch_the_website(String url) throws InterruptedException {
         //  basePage.launchWebSite(string);
         driver.get(url);
+       log().info("launched website is :" +url);
+        log().error("testing");
         driver.manage().window().maximize();
         Thread.sleep(2000);
     }
@@ -267,6 +269,11 @@ public class baseStepDefinition {
     sauceHomePage.clickOneSie();
     sauceHomePage.clickRedTShirt();
     Thread.sleep(2000);
+    }
+
+    @And("quite browser")
+    public void quiteBrowser() {
+        driver.quit();
     }
 }
 
