@@ -1,87 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>project</artifactId>
 
-    <groupId>org.example</groupId>
-    <artifactId>SauceApplication</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-cucumber-reporting</artifactId>
+        <executions>
+          <execution>
+            <configuration>
+              <inputDirectory>target/cucumber-reports</inputDirectory>
+              <jsonFiles>
+                <param>**/*.json</param>
+              </jsonFiles>
+              <outputDirectory>reports/html-reports</outputDirectory>
+              <projectName>project</projectName>
+              <skip>false</skip>
+            </configuration>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <id>execution</id>
+            <phase>verify</phase>
+          </execution>
+        </executions>
+        <groupId>net.masterthought</groupId>
+        <version>5.3.0</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <encoding>UTF-8</encoding>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.8.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <forkCount>1</forkCount>
+          <properties>
+            <property>
+              <name>parallel</name>
+              <value>methods</value>
+            </property>
+            <property>
+              <name>dataproviderthreadcount</name>
+              <value>${dataproviderthreadcount}</value>
+            </property>
+          </properties>
+          <reuseForks>true</reuseForks>
+          <testFailureIgnore>true</testFailureIgnore>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>2.22.0</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>7.2.2</version>
-        <scope>test</scope>
+      <artifactId>selenium-java</artifactId>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <version>4.1.1</version>
     </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>4.1.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>4.1.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <version>4.1.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.8</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>7.1.0</version>
-        </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <dependency>
+      <artifactId>cucumber-java</artifactId>
+      <groupId>io.cucumber</groupId>
+      <version>7.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+    <dependency>
+      <artifactId>cucumber-core</artifactId>
+      <groupId>io.cucumber</groupId>
+      <version>7.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+    <dependency>
+      <artifactId>gherkin</artifactId>
+      <groupId>io.cucumber</groupId>
+      <version>22.0.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+    <dependency>
+      <artifactId>cucumber-java8</artifactId>
+      <groupId>io.cucumber</groupId>
+      <version>7.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+    <dependency>
+      <artifactId>cucumber-testng</artifactId>
+      <groupId>io.cucumber</groupId>
+      <version>7.1.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>testng</artifactId>
+      <groupId>org.testng</groupId>
+      <version>6.9.9</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+    <dependency>
+      <artifactId>commons-io</artifactId>
+      <groupId>commons-io</groupId>
+      <version>2.11.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/ws.schild/jave-core -->
+    <dependency>
+      <artifactId>jave-core</artifactId>
+      <groupId>ws.schild</groupId>
+      <version>3.2.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>jave-nativebin-win64</artifactId>
+      <groupId>ws.schild</groupId>
+      <version>3.2.0</version>
+    </dependency>
 
+    <dependency>
+      <artifactId>log4j-core</artifactId>
+      <groupId>org.apache.logging.log4j</groupId>
+      <version>2.17.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>log4j-api</artifactId>
+      <groupId>org.apache.logging.log4j</groupId>
+      <version>2.17.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>annotations</artifactId>
+      <groupId>org.jetbrains</groupId>
+      <scope>compile</scope>
+      <version>RELEASE</version>
+    </dependency>
+    <dependency>
+      <artifactId>rest-assured</artifactId>
+      <groupId>io.rest-assured</groupId>
+      <scope>test</scope>
+      <version>4.4.0</version>
+    </dependency>
+    <dependency>
+      <artifactId>json-simple</artifactId>
+      <groupId>com.googlecode.json-simple</groupId>
+      <scope>test</scope>
+      <version>1.1.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>assertj-core</artifactId>
+      <groupId>org.assertj</groupId>
+      <scope>test</scope>
+      <version>3.24.2</version>
+    </dependency>
+  </dependencies>
+  <groupId>org.example</groupId>
 
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>7.1.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.17.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.17.1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>5.1.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
-        <dependency>
-            <groupId>net.sourceforge.jexcelapi</groupId>
-            <artifactId>jxl</artifactId>
-            <version>2.6.12</version>
-        </dependency>
-
-    </dependencies>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+  <modelVersion>4.0.0</modelVersion>
+  <properties>
+    <dataproviderthreadcount>1</dataproviderthreadcount>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+  <version>1.0-SNAPSHOT</version>
 
 </project>

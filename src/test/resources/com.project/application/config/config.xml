@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+  <entry key="QA_URL">https://www.saucedemo.com/</entry>
+  <entry key="QA_userName">standard_user</entry>
+  <entry key="QA_password">secret_sauce</entry>
+
+</properties>
