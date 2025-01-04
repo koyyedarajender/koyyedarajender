@@ -27,9 +27,10 @@ public class MethodOverLoadingExample {
 
     public static void main(String args[]) {
 
-        MethodOverLoadingExample methodOverLoadingExample = new MethodOverLoadingExample();
-        methodOverLoadingExample.add1(1, 2);
-        methodOverLoadingExample.add1(1, 2, 3);
+        MethodOverLoadingExample objName = new MethodOverLoadingExample();
+        objName.add1(1, 2);
+        objName.add1(1, 2, 3);
     }
+
 
 }
