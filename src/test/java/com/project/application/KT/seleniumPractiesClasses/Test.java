@@ -63,10 +63,23 @@ public class Test {
         System.out.println("My logged in user color  is: "+usercolor);
 
 
+        String title= driver.getTitle();
+        System.out.println("My title is: "+title);
+
+        String cURL= driver.getCurrentUrl();
+        System.out.println("My cURL is: "+cURL);
+
+        String pageSource= driver.getPageSource();
+        System.out.println("My pageSource is: "+pageSource);
+
+        driver.findElement(By.xpath("//input[@id='user-name']")).clear();
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
+        Thread.sleep(1000);
 
         //input[@id='user-name']
 
-        Thread.sleep(1000);
 
         // driver.close();
         System.out.println("closed");
