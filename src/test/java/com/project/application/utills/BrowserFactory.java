@@ -58,6 +58,10 @@ public class BrowserFactory {
       case "Windows 10":
         driverName = "chromedriver.exe";
         break;
+      case "Windows 11":
+        driverName = "chromedriver.exe";
+        break;
+
       case "Windows Server 2022":
         driverName = "chromedriver.exe";
         break;

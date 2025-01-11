@@ -71,6 +71,7 @@ public class Test {
         // driver.close();
         System.out.println("closed");
         driver.quit();
+        System.out.println("quit in the browser");
 
 
     }
