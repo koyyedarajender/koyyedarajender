@@ -1,13 +1,17 @@
 package com.project.application.KT.selenium.seleniumClasses;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -35,7 +39,7 @@ public class Sync {
         wait.until(ExpectedConditions.elementToBeClickable(login));
         login.click();
 
-        // Wait w= new FluentWait(driver).withTimeout(10,TimeUnit.MINUTES).pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
+      //  Wait w= new FluentWait(driver).withTimeout(10, TimeUnit.MINUTES).pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
 
         System.out.println("the login success");
         driver.close();
